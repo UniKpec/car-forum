@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vites Topuzu</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="nav-head">Vites Topuzu</a>
+            <ul class="sub_headings">
+                <li>
+                    <span class="material-symbols-outlined">forum</span><a href="#">Forum</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">store</span><a href="#">Pazar</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">login</span><a href="#">Giriş</a>
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">person_add</span><a href="{% url 'carsapp:signup' %}">Kayıt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+{% block content %}
+
+
+
+
+{% endblock %}
+</body>
+</html>

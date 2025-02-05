@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Roboto Flex", serif;
+    background-color: #222831;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #76ABAE;
+    align-items: center;
+}
+
+.sub_headings{
+    list-style: none;
+    display: flex;
+    margin-right: 35px;
+}
+
+.navigation a{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.sub_headings li {
+    display: flex; /* Simge ve metin yan yana olacak */
+    align-items: center; 
+    padding: 9px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in;
+    outline: 1px solid transparent;
+}
+
+.sub_headings .material-symbols-outlined {
+    font-size: 20px; /* Simge boyutunu ayarlayabilirsiniz */
+}
+
+.sub_headings a{
+    display: flex;               
+    align-self: center;         
+    justify-content: center; 
+
+    font-size: 18px;
+}
+
+
+.nav-head{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 16px 16px 16px 50px;
+}
+
+.sub_headings li:hover {
+    outline: 1px solid #31363F;
+    background-color: #31363F;
+    color: #fff;
+    
+    /* Icon dönüş animasyonunu da burada tanımlıyoruz */
+    .material-symbols-outlined {
+        transform: rotate(360deg);
+        transition: transform 0.6s ease-in-out;
+    }
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.sign-up-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border:1px solid #EEEEEE ;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    padding:30px;
+}
+
+.sign-up label{
+    font-weight: bolder;
+    padding: 5px 0px;
+    display: block;
+    margin-bottom: 5px;
+    color: #31363F;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #222831;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.button-sign-up {
+
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #76ABAE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.button-sign-up:hover{
+    background-color: #222831;
+}

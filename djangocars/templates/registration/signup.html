@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="sign-up">
+    <form method="POST" class="sign-up-form">
+    
+        {% csrf_token %}
+        
+        
+        {%for field in form%}
+        
+        <div class="form-field">
+
+            {{field.label_tag}}
+        
+    
+
+            {{field}}
+
+        </div>
+        {% if field.errors %}
+                <ul class="error-list">
+                    {% for error in field.errors %}
+                        <li style="color: red;">{{ error }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {%endfor%}
+        <button type="submit" class="button-sign-up">Kayıt Ol</button>
+    </form>
+</div>
+
+
+{% endblock %}
